@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "com.youraveragebub.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"CompositePackResourcesMixin",
+		"FileResourcesSupplierAccessor",
+		"PackAccessor",
+		"PackSelectionScreenMixin",
+		"PathPackResourcesMixin",
+		"PathResourcesSupplierAccessor",
+		"ReloadableResourceManagerMixin",
+		"VanillaPackResourcesMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

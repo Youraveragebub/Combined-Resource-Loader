@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "combinedresourceloader",
+	"version": "${version}",
+	"name": "CombinedResourceLoader",
+	"description": "Choose which installed resource pack supplies each individual texture.",
+	"authors": [
+		"youraveragebub"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/combinedresourceloader/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.youraveragebub.client.CombinedResourceLoaderClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "combinedresourceloader.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
